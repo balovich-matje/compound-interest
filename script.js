@@ -1,5 +1,6 @@
 const inputFields = document.querySelectorAll('input');
 const rangeValue = document.getElementById('range-value');
+const optionalRangeValue = document.getElementById('range-value-optional');
 
 const principalAmount = document.getElementById('initial-principal-balance');
 const interestRate = document.getElementById('interest-rate');
@@ -63,6 +64,7 @@ inputFields.forEach(function (input) {
 // Display the selected value on the "Payment period" input
 paymentPeriod.addEventListener('input', function () {
     rangeValue.textContent = paymentPeriod.value;
+    optionalRangeValue.textContent = paymentPeriod.value;
 });
 
 calculateResult();
