@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    color: #FEFFFE;
+    background-color: #FEFFFE;
+    font-style: "Open Sans";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selected {
+    background-color: #228B22;
+}
+
+h1 {
+    font-style: Georgia, "Times New Roman";
+}
+
+.calc-body {
+    margin: 50px;
+    padding: 50px;
+    width: 1200px;
+    height: 800px;
+    border-radius: 30px;
+    background-color: #003366;
+    box-shadow: #333333 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-style: Georgia, "Times New Roman";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.result-output {
+    font-weight: bold;
+}
