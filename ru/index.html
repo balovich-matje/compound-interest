@@ -47,14 +47,27 @@
         </div>
 
         <div class="element">
-            <h3 id="result-output">Summ: 0</h3>
+            <h3>Итого: <span id="result-output"></span> руб.</h3>
         </div>
-        
-        <!-- <div class="calc-element">
+
+        <div class="calc-element">
             <br>
             <input type="checkbox" id="enable-optional-settings">
-            <label for="enable-optional-settings">Show additional settings</label>
-        </div> -->
+            <label for="enable-optional-settings">Показать дополнительные настройки </label>
+        </div>
+        <div class="calc-element hidden" id="optional">
+            <div>
+                <label for="added-balance">Увеличение вклада (за указанный период): </label><br>
+                <input type="number" id="added-balance" min="0" value="0">
+            </div>
+            <div>
+                <label for="inflation">Инфляция (в процентах): </label><br>
+                <input type="number" id="inflation" step="0.1" min="0" value="0">
+            </div>
+            <div class="element">
+                <h3>Покупательная способность: <span id="result-output-optional"></span> руб.</h3>
+            </div>
+        </div>
     </div>
     <script src="/script.js"></script>
 </body>

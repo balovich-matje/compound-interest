@@ -23,6 +23,11 @@ h1 {
     font-style: Georgia, "Times New Roman";
 }
 
+.hidden {
+    display: none;
+}
+
+
 .calc-body {
     margin: 50px;
     padding: 50px;
