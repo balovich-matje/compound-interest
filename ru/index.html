@@ -2,27 +2,27 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compound interest calculator</title>
+    <title>Калькулятор вклада на долгий срок</title>
 </head>
 
 <body>
     <div class="calc-body">
-        <h1>Compound interest calculator:</h1>
+        <h1>Калькулятор вклада на долгий срок:</h1>
         <div class="calc-element">
-            <label for="initial-principal-balance">Initial investment: </label><br>
+            <label for="initial-principal-balance">Начальное вложение: </label><br>
             <input type="number" id="initial-principal-balance" min="1" value="10000">
         </div>
 
         <div class="calc-element">
-            <label for="interest-rate">Interest rate (percent): </label><br>
+            <label for="interest-rate">Выплата за период (проценты): </label><br>
             <input type="number" id="interest-rate" min="1" value="10">
         </div>
 
         <div class="calc-element">
-            <label for="payment-period">Payment period (in months): </label><br>
+            <label for="payment-period">Периодичность выплат (в месяцах): </label><br>
             <input type="range" id="payment-period" min="1" max="12" step="1" list="tickmarks" value="12">
             <datalist id="tickmarks">
                 <option value="1"></option>
@@ -42,13 +42,12 @@
         </div>
 
         <div class="calc-element">
-            <label for="">Time(in years): </label><br>
+            <label for="">Время вклада (в годах): </label><br>
             <input type="number" id="investment-period" value="2" min="1" step="1">
         </div>
 
         <div class="element">
-            <!-- <p id="result-label">Result: </p> -->
-            <p id="result-output">Result: 0</p>
+            <h3 id="result-output">Summ: 0</h3>
         </div>
         
         <!-- <div class="calc-element">
@@ -57,7 +56,7 @@
             <label for="enable-optional-settings">Show additional settings</label>
         </div> -->
     </div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

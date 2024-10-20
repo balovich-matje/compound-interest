@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound interest calculator</title>
+</head>
+
+<body>
+    <div class="calc-body">
+        <h1>Compound interest calculator:</h1>
+        <div class="calc-element">
+            <label for="initial-principal-balance">Initial investment: </label><br>
+            <input type="number" id="initial-principal-balance" min="1" value="10000">
+        </div>
+
+        <div class="calc-element">
+            <label for="interest-rate">Interest rate (percent): </label><br>
+            <input type="number" id="interest-rate" min="1" value="10">
+        </div>
+
+        <div class="calc-element">
+            <label for="payment-period">Payment period (in months): </label><br>
+            <input type="range" id="payment-period" min="1" max="12" step="1" list="tickmarks" value="12">
+            <datalist id="tickmarks">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+            </datalist>
+            <span id="range-value">12</span>
+        </div>
+
+        <div class="calc-element">
+            <label for="">Time(in years): </label><br>
+            <input type="number" id="investment-period" value="2" min="1" step="1">
+        </div>
+
+        <div class="element">
+            <h3 id="result-output">Result: 0</h3>
+        </div>
+        
+        <!-- <div class="calc-element">
+            <br>
+            <input type="checkbox" id="enable-optional-settings">
+            <label for="enable-optional-settings">Show additional settings</label>
+        </div> -->
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

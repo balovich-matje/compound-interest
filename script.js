@@ -10,12 +10,12 @@ function calculateResult() {
     const principal = parseFloat(principalAmount.value);   // Initial amount (P)
     const annualRate = parseFloat(interestRate.value) / 100;  // Annual interest rate (r), convert from percentage to decimal
     const years = parseFloat(investmentPeriod.value);     // Number of years (t)
-    const compoundingPerYear = parseFloat(paymentPeriod.value); // Number of times interest compounds per year (n)
+    const compoundingPerYear = 12 / parseFloat(paymentPeriod.value); // Number of times interest compounds per year (n)
 
     // Compound interest formula: A = P * (1 + r/n)^(nt)
     const finalAmount = principal * Math.pow((1 + annualRate / compoundingPerYear), compoundingPerYear * years);
 
-    resultField.textContent = "Result: " + finalAmount.toFixed(2); // Display final amount, rounded to 2 decimal places
+    resultField.textContent = "Summ: " + finalAmount.toFixed(2); // Display final amount, rounded to 2 decimal places
 }
 
 
